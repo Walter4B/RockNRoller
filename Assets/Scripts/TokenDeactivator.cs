@@ -20,7 +20,7 @@ public class TokenDeactivator : MonoBehaviour
                     lvlnum = reader.ReadInt32();
                 }
             }
-
+            
             if(lvlnum < currentSceneIndex)
             {
                 using (BinaryWriter writer = new BinaryWriter(File.Open("SaveFile.dat", FileMode.Create)))

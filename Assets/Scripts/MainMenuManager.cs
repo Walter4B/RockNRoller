@@ -10,6 +10,11 @@ public class MainMenuManager : MonoBehaviour
     int lvlnum = 0;
     const string filename = "SaveFile.dat";
 
+    private void Awake()
+    {
+        get_level_number();
+    }
+
     public void get_level_number()
     {
         if(File.Exists(filename))
